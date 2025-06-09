@@ -40,3 +40,23 @@ Klik tombol `Code > Download ZIP` atau clone repositori ini:
 git clone https://github.com/mrikihidayat/Dataset-Sandtana.git
 cd Dataset-Sandtana
 ```
+
+### 2. Baca Dataset dengan Menggunakan Python
+```bash
+import pandas as pd
+
+# Membaca dataset wisata
+df_wisata = pd.read_excel("Dataset-DestinasiWisata.xlsx")
+
+# Membaca dataset hotel
+df_hotel = pd.read_csv("Dataset-Hotel-ByRating&UlasanUser.csv")
+
+# Membaca dataset cuaca harian
+df_cuaca_hari = pd.read_csv("Dataset-PrediksiCuaca-Hari-OpenMeteor.csv")
+
+# Membaca dataset cuaca jam-jaman
+df_cuaca_jam = pd.read_csv("Dataset-PrediksiCuaca-Jam-OpenMeteor.csv")
+
+# Contoh: menampilkan 5 data pertama
+print(df_hotel.head())
+```
